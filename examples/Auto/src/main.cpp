@@ -33,7 +33,6 @@ directionType opposite(directionType dir) {
     }
 }
 
-
 /**
  * @brief Drives the robot in the specified direction for a given number of revolutions and speed.
  *

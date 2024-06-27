@@ -51,7 +51,7 @@ This one's my favorite, because I think it is the most strategic.
 
 Two robots start in either corner, within the goal lines. For example Team 1 starts in the red goal, Team 2 starts in the blue goal. Teams must place four color-coordinated dice on their robots. For example, Team 1 puts red dice on their robot etc.
 
-I am pretty picky about how to place the dice. The dice must be placed in a way such that it is accessible to the other robot. For example, students may not build walls around their dice or build a platform taller than the opponent robot to put the dice on.
+I am pretty picky about how to place the dice. The dice must be placed in a way such that it s accessible to the other robot. For example, students may not build walls around their dice or build a platform taller than the opponent robot to put the dice on.
 
 Anyways, the teams place four dice on their robot. The objective is to get the opponents dice in your goal. For example, Team 1's objective is to get the blue dice on Team 2's robot into their own goal, the red goal. 
 
@@ -129,252 +129,34 @@ This involves introducing them to functions, and the parameters that go into tho
 
 *Students should create a separate project just for the Autonomous challenge*.
 
+## Running Autonomous
+Autonomous is a LOT of guesing and checking, so most students should atleast take a couple hours to finish this. I give them until thursday morning to submit their final autonomous time. Students will be running back and forth between computer and the field, so it is important students are respectful and if someone get to the field first to let them run their autonomous first before puttin their robot on the field.
 
+## Event-based Button Programming
+At this point atleast a couple students have finished their weapons. Some will do spinny things others will have a claw, some will even have a claw on the end of an arm. The arm is a little more advanced to program and we will get to that next.
 
+Event-based programming with buttons is really simple.
 
+I give a lesson on how to do this and *have the kids add this to their existing Tank Drive*.
 
+The example can be found at [examples/TankWithEventButtons](examples/TankWithEventButtons/src/main.cpp).
 
+## Reaction-driven Button Programming
+Eventually some students will ask you how to program the arm for their claw-arm. They want it so while they press up the arm will go up, while they press down the arm will go down, and when neither button is pressed the arm stays in place. Event-Based programming can't do this. A reaction-based approach is necessary.
 
+Example at [examples/Reaction](examples/Reaction/src/main.cpp).
 
+## Running the Tournaments
+That's about it for the learning. 
 
+On Friday, I do the Dice Game in the morning. Generally we have time for double-elimination.
 
+If time allows, I do a single-elimination bracket for Sumo in front of the parents. 
 
+I use [Challonge](https://challonge.com/tournament/bracket_generator) to create the brackets.
 
+### How to handle a draw.
+When playing Sumo or Dice Game, you may have a draw. If the parents time allows, I simply make them rematch until there is a winner. If there is no time for that, such as in front of the parents, there really is no choice. The winner has to be decided by coinflip. I have them play rock paper scissors so that they benefit from the illusion of control.
 
-
-
----
-
-# h1 Heading 8-)
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
-
-
-## Horizontal Rules
-
-___
-
----
-
-***
-
-
-## Typographic replacements
-
-Enable typographer option to see result.
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,,  -- ---
-
-"Smartypants, double quotes" and 'single quotes'
-
-
-## Emphasis
-
-**This is bold text**
-
-__This is bold text__
-
-*This is italic text*
-
-_This is italic text_
-
-~~Strikethrough~~
-
-
-## Blockquotes
-
-
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-sdasd> > > ...or with spaces between arrows.
-
-
-## Lists
-
-Unordered
-
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-1. bar
-
-
-## Code
-
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-
-Block code "fences"
-
-```
-Sample text here...
-```
-
-Syntax highlighting
-
-``` js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
-## Tables
-
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-Right aligned columns
-
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
-
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :cry: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
-- 19^th^
-- H~2~O
-
-
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-==Marked text==
-
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link[^first].
-
-Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
-
-Duplicated footnote reference[^second].
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
-
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-:   Definition 1
-with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
-_Compact style:_
-
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
-
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-*here be dragons*
-:::
+# Conclusion
+Hope this guide was useful!
