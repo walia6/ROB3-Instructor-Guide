@@ -42,7 +42,7 @@ I have found that the autonomous programs can be fairly inconsistent. Most of th
 ### Sumo
 This one is the simplest. This is like wrestling. Two robots start in either corner of the playfield. Once the time starts, the winner of the battle is the first robot to prevent the other robot from moving *substantially* for 5 seconds. In other a robot wins by pinning/disabling the other robot. I give them a minute and thirty seconds for the match.
 
-If any robot has two wheels leave the arena, that is an immediate loss.
+If any robot is knocked out of or leaves the arena and is unable to get back entirely within the arena under its own power that is an immediate loss.
 
 Generally, the kids enjoy this tournament the most so I do it in front of the parents on Friday. There isn't time for a double-elimination tournament in front of the parents, so this one is almost always single-elimination.
 
@@ -113,7 +113,21 @@ Once it's confirmed that the students are able to download the program to their 
 
 I have provided an example bare-bones Tank Drive project at [examples/TankDrive](examples/TankDrive/src/main.cpp).
 
+I generally teach programming concepts to the kids by first writing it myself so I am familiar with what to do. After that, I turn on the projector and have all the kids follow along as I write the program again line-by-line, explaining what I am doing both verbally and in comments.
 
+For this lesson specifically, I start with spiel about how what we are doing is called Object Oriented Programming, talk about how objects in every-day-life can contain other objects, so that they can kind of understand what we are doing when instantiating the motors and the controller. 
+
+Naturally, I also explain what variables are, how to define them, and some of the more popular types. I also explain that an Object is a type, and that we are creating an instance of that object. 
+
+## The Rest of Day 1
+Generally at this point I encourage the kids to begin thinking of/working on their weapon. For the rest of the day, I tell them to either come up with their own design or to copy one from the Gameplan under Build Time. I also introduce Dice Game and Sumo to them, and let them practice against eachother if they desire.
+
+## Programming Autonomous
+On Tuesday I introduce the students to the Autonomous challenge. Then I give a lesson based on the project I wrote at [examples/Auto](examples/Auto/src/main.cpp).
+
+This involves introducing them to functions, and the parameters that go into those functions. I do not allow students to hardcode motor::spin and thread::sleep functions.
+
+*Students should create a separate project just for the Autonomous challenge*.
 
 
 
