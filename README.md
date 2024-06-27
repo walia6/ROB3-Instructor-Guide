@@ -1,20 +1,36 @@
 # BattleBots® Camp: Robotics Engineering with VEX Instructor Guide
 
-## Introduction
+# Introduction
 This is mean to be a general guide based off the practices I have found useful while teaching this course.
-## The Plan
+# The Plan
 When I am done with icebreakers and introductions, I give the kids a general overview of the course:
 
 They will be building and programming our robots (probably in teams of 2 or 3) over the week. Their robot must complete one challenge and compete in two tournaments.
 
-### Teams 
+## Teams 
 If two kids already know eachother or like eachother already I am happy to let them team up. If three kids want to team up, and one kid would rather work by him/herself, I am okay with that as well.
 
-#### Curating Teams
+### Curating Teams
 
 I generally try to curate the teams such that a quiet kid is not with another quiet kid. This is not always possble but is best practice.
 
-### Building the Base
+## The Competitions
+I've come up with three competitions.
+
+The Autonomous competition is completed individually as teams.
+
+The Sumo and Dice Game competitions are 1v1 tournaments. I generally try to do a double-elimination bracket if time allows.
+
+### Setting up the playfield
+![Playfiend](https://octodex.github.com/images/minion.png)
+
+
+### Sumo
+This one is the simplest. This is like wrestling. Two robots start in either corner of the playfield. Once the time starts, the winner of the battle is the first robot to prevent the other robot from moving *substantially* for 5 seconds. In other a robot wins by pinning/disabling the other robot.
+
+Generally, the kids enjoy this tournament the most so I do it in front of the parents on Friday. There isn't time for a double-elimination tournament in front of the parents, so this one is almost always single-elimination.
+
+## Building the Base
 
 The first steps for students is to build the base of their robot. 
 
@@ -25,19 +41,22 @@ I give the kids two options: Come up with your own design, or follow the gamepla
 It doesn't matter which ports on the brain the motors are plugged into.
 
 
-### Programming Setup
+## Programming Setup
 
-The Gameplan says to use Vexcode (A program made by vex specifically for programming their robotit kits). I think that's dumb and worse than VSCode. VSCode is pre-installed on the laptops.
+The Gameplan says to use Vexcode (A program made by vex specifically for programming their robotic kits). I think that's dumb and that it's worse than VSCode. No one has ever heard of Vexcode, whereas VSCode is commonly used in industry. VSCode is pre-installed on the laptops. 
 
-#### Setting up VSCode
+### Setting up VSCode
 
 This part doesn't take too long, unless the internet is ass.
 
-Two extensions/extension packs are required:
+Two extensions/extension packs must be installed:
 
 C/C++ Extension Pack - https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack (this is one of the top results when searching for C++)
 
 VEX Robotics - https://marketplace.visualstudio.com/items?itemName=VEXRobotics.vexcode (this is one of the top results when searching for vex)
+
+#### Creating a New Project
+The kids
 
 
 
