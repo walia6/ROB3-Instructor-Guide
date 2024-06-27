@@ -22,13 +22,42 @@ The Autonomous competition is completed individually as teams.
 The Sumo and Dice Game competitions are 1v1 tournaments. I generally try to do a double-elimination bracket if time allows.
 
 ### Setting up the playfield
-![Playfiend](https://octodex.github.com/images/minion.png)
+Here's how I setup the playfield:
 
+![Playfield](media/field.jpg)
+
+The green tape defines the course to follow for the Autonomous competition.
+
+The black tape in the corners represent the starting positions in Sumo and Dice Game. Additionally, in Dice Game they represent goals.
+
+### Autonomous
+Referencing the image above, the students should write a program that completes the course withou any controller input. Students should create a *separate* vscode project for autonomous as the only code that will copy over from tankdrive is the instantiation of the motors. Students shouldn't even instantiate the controller in this project.
+
+A robot starts at the bottom right and time ends when they hit the wall in the top left after completing the course.
+
+The robot is not allowed to cross the green tape. I am not a strictler on this rule. If they graze it, I don't care. If they flagrantly violate the lines I will not accept the time.
+
+I have found that the autonomous programs can be fairly inconsistent. Most of the time this isnt the kids' fault. If the wheels and motors on the robot are tight, then I do not care if their program is consistent. If their program completes the course without a violation one out of ten times, that's valid.
 
 ### Sumo
-This one is the simplest. This is like wrestling. Two robots start in either corner of the playfield. Once the time starts, the winner of the battle is the first robot to prevent the other robot from moving *substantially* for 5 seconds. In other a robot wins by pinning/disabling the other robot.
+This one is the simplest. This is like wrestling. Two robots start in either corner of the playfield. Once the time starts, the winner of the battle is the first robot to prevent the other robot from moving *substantially* for 5 seconds. In other a robot wins by pinning/disabling the other robot. I give them a minute and thirty seconds for the match.
+
+If any robot has two wheels leave the arena, that is an immediate loss.
 
 Generally, the kids enjoy this tournament the most so I do it in front of the parents on Friday. There isn't time for a double-elimination tournament in front of the parents, so this one is almost always single-elimination.
+
+### Dice Game
+This one's my favorite, because I think it is the most strategic.
+
+Two robots start in either corner, within the goal lines. For example Team 1 starts in the red goal, Team 2 starts in the blue goal. Teams must place four color-coordinated dice on their robots. For example, Team 1 puts red dice on their robot etc.
+
+I am pretty picky about how to place the dice. The dice must be placed in a way such that it is accessible to the other robot. For example, students may not build walls around their dice or build a platform taller than the opponent robot to put the dice on.
+
+Anyways, the teams place four dice on their robot. The objective is to get the opponents dice in your goal. For example, Team 1's objective is to get the blue dice on Team 2's robot into their own goal, the red goal. 
+
+The drivers must stop moving their robot at a minute thirty for scoring. Scoring is simple. Each blue dice within the red goal at the end of time is one point for Team 1, vice versa. *A dice counts as a point even if it is still on a robot, as long as that dice is physically within the goal*.
+
+Contact is allowed in Dice Game. A popular strategy is to get one point and then pin the opponent for the remaining time. This is valid.
 
 ## Building the Base
 
@@ -43,7 +72,7 @@ It doesn't matter which ports on the brain the motors are plugged into.
 
 ## Programming Setup
 
-The Gameplan says to use Vexcode (A program made by vex specifically for programming their robotic kits). I think that's dumb and that it's worse than VSCode. No one has ever heard of Vexcode, whereas VSCode is commonly used in industry. VSCode is pre-installed on the laptops. 
+The Gameplan says to use Vexcode (A program made by vex specifically for programming their robotic kits). I think that's dumb and that it's worse than VSCode. No one has ever heard of Vexcode, whereas VSCode is commonly used in industry. VSCode is pre-installed on the laptops.
 
 ### Setting up VSCode
 
@@ -51,12 +80,23 @@ This part doesn't take too long, unless the internet is ass.
 
 Two extensions/extension packs must be installed:
 
-C/C++ Extension Pack - https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack (this is one of the top results when searching for C++)
++ [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack)
 
-VEX Robotics - https://marketplace.visualstudio.com/items?itemName=VEXRobotics.vexcode (this is one of the top results when searching for vex)
++ [VEX Robotics](https://marketplace.visualstudio.com/items?itemName=VEXRobotics.vexcode)
 
-#### Creating a New Project
-The kids
+
+Follow [this guide](https://kb.vex.com/hc/en-us/articles/8608806329364-VS-Code-New-Project-for-V5) to create a new project. Students should select the blank template.
+
+To program the robot, *students should only edit src/main.cpp*. 
+
+To download the project to the brain, students should plug the brain into the laptop with a micro-USB cable. In my experience it's pretty plug and play.
+
+You can tell that the brain is correctly connected by confirming that the brain is recognized in the Vex Device Info tab of the Vex action pane.
+
+![Brain disconnected](media/actionpane.JPG)
+
+### Documentation
+For reference, [here](https://www.robotmesh.com/studio/content/docs/vexv5-cpp/html/namespacevex.html) is the official Vex C++ documentation.
 
 
 
