@@ -111,7 +111,7 @@ I find I don't have to reference this much as the VEX API is well integrated wit
 ## Programming Tank Drive
 Once it's confirmed that the students are able to download the program to their brains, it is time to start working on Tank Drive. Basically, in a Tank Drive, the left joysticks controls the left motor(s), and the right joystick controls the right motor(s).
 
-I have provided an example bare-bones Tank Drive project at [examples/TankDrive](examples/TankDrive/main.cpp).
+I have provided an example bare-bones Tank Drive project at [examples/TankDrive](examples/TankDrive/src/main.cpp).
 
 
 
