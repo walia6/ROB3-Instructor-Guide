@@ -65,14 +65,14 @@ The first steps for students is to build the base of their robot.
 
 This is basically a rectangle that holds the brain, battery (using the battery clips), the wireless controller receiver, at least two motors, and wheels.
 
-I give the kids two options: Come up with your own design, or follow the gameplan page "Vex > Build The Base".
+I give the kids two options: Come up with your own design, or follow the gameplan page "VEX > Build The Base".
 
 It doesn't matter which ports on the brain the motors are plugged into.
 
 
 ## Programming Setup
 
-The Gameplan says to use Vexcode (A program made by vex specifically for programming their robotic kits). I think that's dumb and that it's worse than VSCode. No one has ever heard of Vexcode, whereas VSCode is commonly used in industry. VSCode is pre-installed on the laptops.
+The Gameplan says to use VEXcode (A program made by VEX specifically for programming their robotic kits). I think that's dumb and that it's worse than VSCode. No one has ever heard of VEXcode, whereas VSCode is commonly used in industry. VSCode is pre-installed on the laptops.
 
 ### Setting up VSCode
 
@@ -91,12 +91,27 @@ To program the robot, *students should only edit src/main.cpp*.
 
 To download the project to the brain, students should plug the brain into the laptop with a micro-USB cable. In my experience it's pretty plug and play.
 
-You can tell that the brain is correctly connected by confirming that the brain is recognized in the Vex Device Info tab of the Vex action pane.
+You can tell that the brain is correctly connected by confirming that the brain is recognized in the VEX Device Info tab of the VEX action pane.
 
 ![Brain disconnected](media/actionpane.JPG)
 
+To download the program to the robot, click the build and download button at the bottom of the screen.
+
+![Build and Download](media/download.JPG)
+
+Sometimes, I have noticed that the brain kind of freezes. I am not sure why this happens. This prevents the laptop from recognizing the robot and downloading to it. A workaround is to unplug the battery from the brain and plug it back in. Otherwise, as long as the code compiles without error, there should be no issue downloading to the robot.
+
+The default empty template prints a message to the screen of the brain when run. I have kids run this program and see that the print is occuring to confirm everything is working correctly.
+
 ### Documentation
 For reference, [here](https://www.robotmesh.com/studio/content/docs/vexv5-cpp/html/namespacevex.html) is the official Vex C++ documentation.
+
+I find I don't have to reference this much as the VEX API is well integrated with the VSCode quick suggestions.
+
+## Programming Tank Drive
+Once it's confirmed that the students are able to download the program to their brains, it is time to start working on Tank Drive. Basically, in a Tank Drive, the left joysticks controls the left motor(s), and the right joystick controls the right motor(s).
+
+I have provided an example bare-bones Tank Drive project at [examples/TankDrive](examples/TankDrive/main.cpp).
 
 
 
